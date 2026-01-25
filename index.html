@@ -4,11 +4,11 @@
     <title>Pizza Ordering Form</title>
 </head>
 <body>
-    <div>
+    <header>
         <h1>Pizza Ordering Form</h1>
-    </div>
+    </header>
     <form>
-    <div>
+    <section>
         <h2>Contact Information</h2>
         <label for="inName">Name: </label>
         <input type="text" name="inName" id="inName" title="Please enter required info" required>
@@ -18,9 +18,9 @@
         <br>    
         <label for="inEmail">Email: </label>
         <input type="email" name="inEmail" id="inEmail" title="Please enter required info" required>
-    </div>
+    </section>
 
-    <div>
+    <section>
         <h2>Select Pizza Size</h2>
         <select name="selectSize" id="selectSize" title="Select Size" required>
             <option selected disabled value="">Select Size</option>
@@ -28,14 +28,14 @@
             <option>Large</option>
             <option>XLarge</option>
         </select>
-    </div>
-    <div>
+    </section>
+    <section>
         <h2>Select Pizza Sauce</h2>
         <input type="radio" name="inputSauce" title="Select sauce" required><label>Marinara</label> <br>
         <input type="radio" name="inputSauce" title="Select Sauce"><label>Ranch</label> <br>
         <input type="radio" name="inputSauce" title="Select Sauce"><label>No Sauce</label>
-    </div>
-    <div>
+    </section>
+    <section>
         <h2>Select Toppings</h2>
         <input type="checkbox" name="inputToppings" title="Select toppings" value="Pepperoni"><label>Pepperoni</label>
         <input type="checkbox" name="inputToppings" title="Select toppings" value="Sausage"><label>Sausage</label> <br>
@@ -43,14 +43,14 @@
         <input type="checkbox" name="inputToppings" title="Select toppings" value="Pineapple"><label>Pineapple</label> <br>
         <input type="checkbox" name="inputToppings" title="Select toppings" value="Peppers"><label>Peppers</label>
         <input type="checkbox" name="inputToppings" title="Select toppings" value="Onions"><label>Onions</label>
-    </div>
-    <div>
+    </section>
+    <section>
         <h2>Additional Instructions</h2>
         <textarea name="additionalInstructions" title="Add additional instructions">Add instructions</textarea><br>
         <input type="submit" value="Submit" title="Place order">
-    </div>
+    </section>
     </form>
-    <div>
+    <section>
         <br><br><br>
         <table border="1">
             <caption>List of My Favorite Games</caption>
@@ -88,6 +88,6 @@
                 </tr>  
             </tfoot>
         </table>
-    </div>
+    </section>
 </body>
 </html>
