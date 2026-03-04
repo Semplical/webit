@@ -1,0 +1,40 @@
+body {
+    background: rgb(155, 89, 65);
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    background: rgb(216, 86, 34);
+    padding: 10px;
+    margin: 15px auto;
+}
+
+ select{
+    padding: 10px;
+    margin: 5px;
+}
+
+input{
+    padding: 10px;
+    margin: 5px;
+}
+
+#Team {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#Image {
+    width: 200px;
+    margin: 10px 0;
+}
+
+button {
+    background: rgb(168, 20, 20);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+

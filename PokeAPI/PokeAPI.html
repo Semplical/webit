@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="PokeAPI.js"></script>
+</head>
+<body>
+    <h1>Pokemon Team Builder</h1>
+
+    <section id="searchSection">
+        <input type="text" id="PokemonText" placeholder="Enter desired pokemon name or ID #">
+        <button id="searchButton" onclick="searchPokemon()">Search</button>
+    </section>
+
+    <section id="Display">
+        <h2 id="Name"></h2>
+        <img id="Image" src="" alt="Image of the pokemon">
+        <br><br><br><br>
+        <audio id="Audio" controls></audio>
+
+        <div id="Moves">
+            <h3>Select Moves</h3>
+            <select id="Move1">
+                <option value="">Move One</option>
+            </select>
+            <select id="Move2">
+                <option value="">Move Two</option>
+            </select>
+            <br><br>
+            <select id="Move3">
+                <option value="">Move Three</option>
+            </select>
+            <select id="Move4">
+                <option value="">Move Four</option>
+            </select>
+            <br><br>
+        </div>
+        <br><br>
+        <button id="addTeam" onclick="addTeam()">Add to Team</button>
+
+    </section>
+
+    <section id="TeamSection">
+        <h2>Your Team</h2>
+        <div id="Team"></div>
+    </section>
+
+    
+</body>
+</html>
