@@ -1,0 +1,212 @@
+:root {
+    --bg-main: #0f0a1f;
+    --bg-surface: #1a1333;
+    --primary: #7c5cff;
+    --primary-muted: #a78bfa;
+    --text-main: #f5f3ff;
+    --dim-text: #c4b5fd;
+    --border: #2a1f4a;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: radial-gradient(circle at top, #1a1333, #0f0a1f);
+    color: var(--text-main);
+}
+
+.NavigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-muted);
+}
+
+.navigation-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.navigation-search {
+    width: 65%;
+    max-width: 450px;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: #120d28;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.navigation-search::placeholder {
+    color: var(--dim-text);
+}
+
+.navigation-search:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.4);
+}
+
+.navigation-button {
+    background: none;
+    border: 1px solid transparent;
+    color: var(--text-main);
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.navigation-button:hover {
+    background-color: rgba(124, 92, 255, 0.15);
+    border-color: var(--primary);
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.Info-section {
+    margin-top: 3rem;
+    text-align: center;
+    max-width: 100%;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.Info-section:hover {
+    box-shadow: 0 10px 30px rgba(124, 92, 255, 0.15);
+}
+
+.Info-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-muted);
+}
+
+.Info-section p {
+    color: var(--dim-text);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.featured-card {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-card:hover {
+    box-shadow: 0 12px 35px rgba(124, 92, 255, 0.15);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-color: rgba(124, 92, 255, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--primary);
+    width: 0%;
+    transition: width 0.05s linear;
+}
+
+.featured-card h3 {
+    color: var(--primary-muted);
+    margin-bottom: 0.5rem;
+}
+
+.featured-card p {
+    color: var(--dim-text);
+    line-height: 1.5;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.link-button {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}   
+
+.link-button:hover {
+    background: var(--primary-muted);
+}
+
+.featured-header {
+    color: var(--primary-muted);
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.Info-section,
+.featured-card {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.link-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.link-button {
+    background-color: #120d28;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.link-button:hover {
+    background-color: rgba(124, 92, 255, 0.25);
+    border-color: var(--primary);
+}

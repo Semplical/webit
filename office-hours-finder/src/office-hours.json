@@ -1,0 +1,82 @@
+[
+  {
+    "courseCode": "JPN 1120C",
+    "instructor": "Nakamura",
+    "type": "Professor",
+    "day": "Wednesday and Friday",
+    "startTime": "9:00AM",
+    "endTime": "11:00AM",
+    "location": "Zoom / Appointment",
+    "link": "N/A"
+  },
+  {
+    "courseCode": "CAP3104",
+    "instructor": "Pittman",
+    "type": "Lecturer",
+    "day": "Monday, Tuesday, Wednesday, Thursday",
+    "startTime": "3:00PM",   
+    "endTime": "4:15PM",
+    "location": "HEC 241",
+    "link": "N/A"
+  },
+  {
+    "courseCode": "CIS3921",
+    "instructor": "Llewellyn",
+    "type": "Lecturer",
+    "day": "Monday, Tuesday, Thursday",
+    "startTime": "4:00PM",
+    "endTime": "5:00PM",
+    "location": "Zoom / Appointment",
+    "link": "N/A"
+  },
+  {
+    "courseCode": "CIS3921",
+    "instructor": "Llewellyn",
+    "type": "Lecturer",
+    "day": "Wednesday",
+    "startTime": "3:30PM",
+    "endTime": "4:20PM",
+    "location": "Zoom / Appointment",
+    "link": "N/A"
+  },
+  {
+    "courseCode": "CIS4004",
+    "instructor": "Pfeil",
+    "type": "Lecturer",
+    "day": "Tuesday and Thursday",
+    "startTime": "2:30PM",
+    "endTime": "5:30PM",
+    "location": "HEC 239A",
+    "link": "N/A"
+  },
+  {
+    "courseCode": "CIS4524",
+    "instructor": "Roberts",
+    "type": "Lecturer",
+    "day": "Monday",
+    "startTime": "3:00PM",
+    "endTime": "5:00PM",
+    "location": "Zoom",
+    "link": "N/A"
+  },
+  {
+    "courseCode": "CNT4703C",
+    "instructor": "Alkinoon",
+    "type": "Professor",
+    "day": "Monday and Wednesday",
+    "startTime": "10:00AM",
+    "endTime": "11:00AM",
+    "location": "Zoom",
+    "link": "https://ucf.zoom.us/my/alialkinoon"
+  },
+  {
+    "courseCode": "CNT4703C",
+    "instructor": "Peddireddy",
+    "type": "TA",
+    "day": "Tuesday and Thursday",
+    "startTime": "1:00PM",
+    "endTime": "2:00PM",
+    "location": "Zoom",
+    "link": "https://ucf.zoom.us/j/92097906643"
+  }
+]
