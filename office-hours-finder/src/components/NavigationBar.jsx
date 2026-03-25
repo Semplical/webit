@@ -1,4 +1,4 @@
-export default function NavigationBar() {
+export default function NavigationBar({ setPage }) {
   return (
     <header className="navigation-bar">
       <div className="navigation-left">
@@ -6,16 +6,10 @@ export default function NavigationBar() {
       </div>
 
       <nav className="navigation-right">
-        <button className="navigation-button">Home</button>
-        <button className="navigation-button">Add a Class</button>
-        <button className="navigation-button">All Classes</button>
+        <button className="navigation-button" onClick={() => setPage("home")}>Home</button>
+        <button className="navigation-button"> Add a Class </button>
+        <button className="navigation-button" onClick={() => setPage("classes")}>All Classes</button>
 
-        <input
-          type="text"
-          placeholder="Search classes (Ex: CGS 4941)"
-          className="navigation-search"
-          aria-label="Search classes"
-        />
       </nav>
     </header>
   );
