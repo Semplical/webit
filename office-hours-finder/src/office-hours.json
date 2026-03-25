@@ -78,5 +78,45 @@
     "endTime": "2:00PM",
     "location": "Zoom",
     "link": "https://ucf.zoom.us/j/92097906643"
+  },
+  {
+    "courseCode": "CIS3003",
+    "instructor": "Donnelly",
+    "type": "TA",
+    "day": "Tuesday",
+    "startTime": "2:00PM",
+    "endTime": "4:00PM",
+    "location": "Zoom",
+    "link": "https://tinyurl.com/4pasjvjf"
+  },
+  {
+    "courseCode": "CIS3003",
+    "instructor": "Donnelly",
+    "type": "TA",
+    "day": "Thursday",
+    "startTime": "6:00PM",
+    "endTime": "10:00PM",
+    "location": "Zoom",
+    "link": "https://tinyurl.com/4pasjvjf"
+  },
+  {
+    "courseCode": "CIS3003",
+    "instructor": "Donnelly",
+    "type": "TA",
+    "day": "Friday",
+    "startTime": "10:00AM",
+    "endTime": "2:00PM",
+    "location": "Zoom",
+    "link": "https://tinyurl.com/4pasjvjf"
+  },
+  {
+    "courseCode": "CIS3003",
+    "instructor": "Nedorost",
+    "type": "Professor",
+    "day": "Friday",
+    "startTime": "3:00PM",
+    "endTime": "5:00PM",
+    "location": "HEC 317",
+    "link": "NA"
   }
 ]
