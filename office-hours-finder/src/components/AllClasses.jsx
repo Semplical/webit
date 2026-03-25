@@ -34,7 +34,8 @@ export default function AllClasses() {
             <p><strong>Day(s):</strong> {cls.day}</p>
             <p><strong>Time:</strong> {cls.startTime} - {cls.endTime}</p>
             <p><strong>Location:</strong> {cls.location}</p>
-            {cls.link && cls.link !== "N/A" && <div className="card-buttons"><a href={cls.link} target="_blank" rel="noopener noreferrer" className="link-button">Join Online</a><button onClick={() => navigator.clipboard.writeText(cls.link)} className="link-button">Copy Link</button></div>}
+            {cls.link && cls.link !== "N/A" && <div className="card-buttons"><a href={cls.link} target="_blank" rel="noopener noreferrer" className="link-button">Join Online</a>
+            <button onClick={() => navigator.clipboard.writeText(cls.link)} className="link-button">Copy Link</button></div>}
           </div>
         ))}
       </div>

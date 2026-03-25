@@ -202,11 +202,16 @@ body {
     background-color: #120d28;
     border: 1px solid var(--border);
     color: var(--text-main);
-    padding: 0.5rem 0.7rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-family: inherit;
     text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
 }
 
 .link-button:hover {
@@ -256,6 +261,7 @@ body {
 
 .card-buttons {
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
     margin-top: 0.75rem;
 }
