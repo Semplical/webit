@@ -3,11 +3,12 @@ import "./styles/main.css";
 import officeHoursData from "./office-hours.json";
 import FeaturedCards from "./featured-classes";
 import AllClasses from "./components/AllClasses";
+import AddClass from "./components/AddClass";
 import { useState } from "react";
 
 export default function App() {
   const [page, setPage] = useState("home");
-
+  const [classes, setClasses] = useState(officeHoursData);
   return (
     <div>
       <NavigationBar setPage={setPage} />
@@ -25,7 +26,8 @@ export default function App() {
           <FeaturedCards data={officeHoursData} interval={10000} />
         </main>
       )}
-      {page === "classes" && <AllClasses />}
+      {page === "classes" && <AllClasses data={classes} />} 
+      {page === "add" && <AddClass setClasses={setClasses} />}
     </div>
   );
 }

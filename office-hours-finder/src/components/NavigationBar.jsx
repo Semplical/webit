@@ -7,7 +7,7 @@ export default function NavigationBar({ setPage }) {
 
       <nav className="navigation-right">
         <button className="navigation-button" onClick={() => setPage("home")}>Home</button>
-        <button className="navigation-button"> Add a Class </button>
+        <button className="navigation-button" onClick={() => setPage("add")}> Add a Class </button>
         <button className="navigation-button" onClick={() => setPage("classes")}>All Classes</button>
 
       </nav>

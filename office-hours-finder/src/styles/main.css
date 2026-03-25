@@ -265,3 +265,42 @@ body {
     gap: 0.5rem;
     margin-top: 0.75rem;
 }
+
+.add-class {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.add-form input,
+.add-form select {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: #120d28;
+    color: var(--text-main);
+}
+
+.add-form input:focus,
+.add-form select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(124, 92, 255, 0.4);
+}
+
+.no-results {
+  text-align: center;
+  grid-column: 1 / -1;
+  color: var(--dim-text);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
