@@ -4,17 +4,29 @@ export default function AllClasses({ data, initialQuery = "" }) {
   const [filterType, setFilterType] = useState("course");
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    if (initialQuery) {
-      setQuery(initialQuery);
-    }
-  }, [initialQuery]);
+  // track if initial auto-mode was applied
+  const [autoModeUsed, setAutoModeUsed] = useState(false);
 
   useEffect(() => {
-    if (!query) return;
-    const hasNumber = /\d/.test(query);
+    if (!initialQuery) return;
+
+    setQuery(initialQuery);
+
+    const hasNumber = /\d/.test(initialQuery);
     setFilterType(hasNumber ? "course" : "instructor");
-  }, [query]);
+
+    setAutoModeUsed(true);
+  }, [initialQuery]);
+
+  const handleQueryChange = (value) => {
+    setQuery(value);
+
+    // only auto-adjust BEFORE user takes control
+    if (!autoModeUsed) {
+      const hasNumber = /\d/.test(value);
+      setFilterType(hasNumber ? "course" : "instructor");
+    }
+  };
 
   const filtered = data.filter((cls) => {
     const value =
@@ -35,7 +47,10 @@ export default function AllClasses({ data, initialQuery = "" }) {
             <input
               type="radio"
               checked={filterType === "course"}
-              onChange={() => setFilterType("course")}
+              onChange={() => {
+                setAutoModeUsed(true);
+                setFilterType("course");
+              }}
             />
             Course Code
           </label>
@@ -44,7 +59,10 @@ export default function AllClasses({ data, initialQuery = "" }) {
             <input
               type="radio"
               checked={filterType === "instructor"}
-              onChange={() => setFilterType("instructor")}
+              onChange={() => {
+                setAutoModeUsed(true);
+                setFilterType("instructor");
+              }}
             />
             Instructor
           </label>
@@ -55,7 +73,7 @@ export default function AllClasses({ data, initialQuery = "" }) {
           className="filter-input"
           placeholder="Search..."
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => handleQueryChange(e.target.value)}
         />
       </div>
 
@@ -73,9 +91,15 @@ export default function AllClasses({ data, initialQuery = "" }) {
 
               {cls.link && cls.link !== "N/A" && (
                 <div className="card-buttons">
-                  <a href={cls.link} target="_blank" rel="noopener noreferrer" className="link-button">
+                  <a
+                    href={cls.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-button"
+                  >
                     Join Online
                   </a>
+
                   <button
                     onClick={() => navigator.clipboard.writeText(cls.link)}
                     className="link-button"
