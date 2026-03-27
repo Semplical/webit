@@ -1,6 +1,6 @@
 [
   {
-    "courseCode": "JPN 1120C",
+    "courseCode": "JPN1120C",
     "instructor": "Nakamura",
     "type": "Professor",
     "day": "Wednesday and Friday",
@@ -117,6 +117,36 @@
     "startTime": "3:00PM",
     "endTime": "5:00PM",
     "location": "HEC 317",
+    "link": "NA"
+  },
+   {
+    "courseCode": "COP2502",
+    "instructor": "Paredes",
+    "type": "Lecturer",
+    "day": "Tuersday and Thursday",
+    "startTime": "1:00PM",
+    "endTime": "3:30PM",
+    "location": "Zoom / Appointment",
+    "link": "NA"
+  },
+  {
+    "courseCode": "COP2502",
+    "instructor": "Paredes",
+    "type": "Lecturer",
+    "day": "Wednesday",
+    "startTime": "11:00PM",
+    "endTime": "4:00PM",
+    "location": "Zoom / Appointment",
+    "link": "NA"
+  },
+  {
+    "courseCode": "ENC3250",
+    "instructor": "Proulx",
+    "type": "Professor",
+    "day": "Thursday",
+    "startTime": "12:00PM",
+    "endTime": "2:00PM",
+    "location": "Zoom / Appointment",
     "link": "NA"
   }
 ]

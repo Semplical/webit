@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function AddClass({ setClasses }) {
+export default function AddClass({ setClasses, setPage, setSearchPrefill, setToast }) {
   const [form, setForm] = useState({
     courseCode: "",
     instructor: "",
@@ -18,7 +18,15 @@ export default function AddClass({ setClasses }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     setClasses(prev => [...prev, form]);
+
+    setSearchPrefill(form.courseCode);
+
+    setToast("Class Added!");
+
+    setPage("classes");
+
     setForm({
       courseCode: "",
       instructor: "",
