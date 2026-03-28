@@ -346,6 +346,59 @@ body {
     margin-bottom: 1.75rem;
 }
 
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.filter-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: rgba(18, 13, 40, 0.9);
+    color: var(--dim-text);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.filter-option:hover {
+    border-color: rgba(245, 197, 66, 0.45);
+    background: rgba(245, 197, 66, 0.08);
+}
+
+.filter-option.is-active {
+    color: var(--text-main);
+    border-color: rgba(245, 197, 66, 0.75);
+    background: rgba(245, 197, 66, 0.12);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.filter-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.filter-option-dot {
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 999px;
+    border: 2px solid rgba(245, 245, 245, 0.45);
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-option.is-active .filter-option-dot {
+    border-color: var(--primary);
+    background: radial-gradient(circle, var(--primary) 0 45%, transparent 50%);
+    box-shadow: 0 0 0 3px rgba(245, 197, 66, 0.14);
+}
+
 .class-title {
     margin-bottom: 1rem;
 }
@@ -368,6 +421,10 @@ body {
     align-items: center;
     gap: 0.5rem;
     width: 100%;
+}
+
+.classes-search {
+    justify-content: flex-start;
 }
 
 .home-search-container {

@@ -43,38 +43,48 @@ export default function AllClasses({ data, initialQuery = "" }) {
 
       <div className="filter-bar">
         <div className="filter-options">
-          <label>
+          <label
+            className={`filter-option ${filterType === "course" ? "is-active" : ""}`}
+          >
             <input
               type="radio"
+              name="class-filter"
               checked={filterType === "course"}
               onChange={() => {
                 setAutoModeUsed(true);
                 setFilterType("course");
               }}
             />
-            Course Code
+            <span className="filter-option-dot" aria-hidden="true" />
+            <span>Course Code</span>
           </label>
 
-          <label>
+          <label
+            className={`filter-option ${filterType === "instructor" ? "is-active" : ""}`}
+          >
             <input
               type="radio"
+              name="class-filter"
               checked={filterType === "instructor"}
               onChange={() => {
                 setAutoModeUsed(true);
                 setFilterType("instructor");
               }}
             />
-            Instructor
+            <span className="filter-option-dot" aria-hidden="true" />
+            <span>Instructor</span>
           </label>
         </div>
 
-        <input
-          type="text"
-          className="filter-input"
-          placeholder="Search..."
-          value={query}
-          onChange={(e) => handleQueryChange(e.target.value)}
-        />
+        <div className="home-search classes-search">
+          <input
+            type="text"
+            className="home-search-input"
+            placeholder="Search any class code or faculty..."
+            value={query}
+            onChange={(e) => handleQueryChange(e.target.value)}
+          />
+        </div>
       </div>
 
       <div className="classes-grid">

@@ -28,7 +28,7 @@ export default function App() {
       {page === "home" && (
         <main className="Info">
           <section className="Info-section">
-            <h2>Welcome to the Office Hours Finder!</h2>
+            <h2>Welcome!</h2>
             <p>
               Welcome to the Office Hour Finder Tool!<br />
               Easily locate both professors and TAs, see upcoming availability, and plan your week accordingly.
